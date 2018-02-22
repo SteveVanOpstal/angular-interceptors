@@ -1,10 +1,13 @@
 {
   "name": "angular-interceptors",
   "version": "0.0.0",
-  "license": "",
+  "engines": {
+    "node": ">=8.9.0",
+    "yarn": ">=1.3.2"
+  },
   "scripts": {
     "package": "ng-packagr -p package.json",
-    "format": "npm run clang-format -- --glob=\"@(src)/**/*.@(ts|js)\" -i && npm run clang-format -- --glob=\"*.@(ts|js)\" -i",
+    "format": "clang-format --glob=\"@(src)/**/*.@(ts|js)\" -i && clang-format --glob=\"*.@(ts|js)\" -i",
     "lint": "tslint -p . -c tslint.json \"src/**/*.ts\" \"public_api.ts\"",
     "clang-format": "clang-format",
     "ng-packagr": "ng-packagr",

@@ -13,7 +13,7 @@ cache:
     - node_modules
 
 install:
-  - npm install
+  - yarn
 
 env:
   - CXX=g++-4.8
