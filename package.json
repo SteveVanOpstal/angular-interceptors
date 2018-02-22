@@ -1,6 +1,6 @@
 {
   "name": "angular-interceptors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "GPL-3.0",
   "engines": {
     "node": ">=8.9.0",
@@ -12,13 +12,8 @@
     "lint": "tslint -p . -c tslint.json \"src/**/*.ts\" \"public_api.ts\"",
     "release": "yarn package && standard-version --release-as patch",
     "postrelease": "git push --follow-tags origin master && conventional-github-releaser -p angular",
-    "clang-format": "clang-format",
-    "ng-packagr": "ng-packagr",
-    "tslint": "tslint",
-    "standard-version": "standard-version",
-    "conventional-github-releaser": "conventional-github-releaser"
+    "publish": "publish lib"
   },
-  "private": true,
   "dependencies": {
     "@angular/common": "~5.2.0",
     "@angular/compiler": "~5.2.0",
