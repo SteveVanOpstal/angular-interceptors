@@ -1,17 +1,19 @@
-## angular-interceptors
+# angular-interceptors
 Useful interceptors for [Angular](https://github.com/angular/angular)
 
-### Installation
-Install `angular-interceptors` from npm:
+## Installation
 ```bash
 npm install angular-interceptors --save
 ```
 
-### Usage
+## Usage
+- [Cache Interceptor](#cache-interceptor)
+- [Ensure Https Interceptor](#ensure-https-interceptor)
+- [Prefix Url Interceptor](#prefix-url-interceptor)
 
-#### Cache Interceptor
+### Cache Interceptor
 Cache all HTTP `GET` requests.
-When a `GET` request contains the `disable-cache` header it will not be cached either.
+> `GET` requests with a `disable-cache` header will not be cached.
 
 ```typescript
 import {CacheInterceptorModule} from 'angular-interceptors';
@@ -36,7 +38,7 @@ setTimeout(() => {
 
 
 
-#### Ensure Https Interceptor
+### Ensure Https Interceptor
 Change `http://` to `https://` in HTTP request urls.
 
 ```typescript
@@ -58,7 +60,7 @@ this.http.get('https://some.url'); // --> https://some.url
 
 
 
-#### Prefix Url Interceptor
+### Prefix Url Interceptor
 Prefix HTTP request urls.
 
 ```typescript
