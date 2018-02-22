@@ -1,0 +1,40 @@
+{
+  "name": "angular-interceptors",
+  "version": "0.0.0",
+  "license": "",
+  "scripts": {
+    "package": "ng-packagr -p package.json",
+    "format": "npm run clang-format -- --glob=\"@(src)/**/*.@(ts|js)\" -i && npm run clang-format -- --glob=\"*.@(ts|js)\" -i",
+    "lint": "tslint -p . -c tslint.json \"src/**/*.ts\" \"public_api.ts\"",
+    "clang-format": "clang-format",
+    "ng-packagr": "ng-packagr",
+    "tslint": "tslint"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/common": "~5.2.0",
+    "@angular/compiler": "~5.2.0",
+    "@angular/core": "~5.2.0",
+    "@angular/platform-browser": "~5.2.0",
+    "@angular/platform-browser-dynamic": "~5.2.0",
+    "core-js": "^2.4.1",
+    "rxjs": "^5.5.5",
+    "typescript": "^2.4.2",
+    "zone.js": "^0.8.14"
+  },
+  "devDependencies": {
+    "@angular/compiler-cli": "~5.2.0",
+    "@angular/language-service": "~5.2.0",
+    "clang-format": "^1.1.0",
+    "codelyzer": "4.0.2",
+    "ng-packagr": "2.0.0-rc.9",
+    "tsickle": "^0.26",
+    "tslint": "^5.9.1"
+  },
+  "ngPackage": {
+    "dest": "lib",
+    "lib": {
+      "entryFile": "public_api.ts"
+    }
+  }
+}
