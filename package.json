@@ -11,8 +11,7 @@
     "format": "clang-format --glob=\"@(src)/**/*.@(ts|js)\" -i && clang-format --glob=\"*.@(ts|js)\" -i",
     "lint": "tslint -p . -c tslint.json \"src/**/*.ts\" \"public_api.ts\"",
     "release": "yarn package && standard-version --release-as patch",
-    "postrelease": "git push --follow-tags origin master && conventional-github-releaser -p angular",
-    "publish": "publish lib"
+    "postrelease": "git push --follow-tags origin master && conventional-github-releaser -p angular"
   },
   "dependencies": {
     "@angular/common": "~5.2.0",

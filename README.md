@@ -23,7 +23,6 @@ import {CacheInterceptorModule} from 'angular-interceptors';
     CacheInterceptorModule.forRoot(5 * 1000) // Max age in milliseconds. In this case 5 seconds.
   ]
 })
-export
 ```
 
 Example:
@@ -49,7 +48,6 @@ import {EnsureHttpsInterceptorModule} from 'angular-interceptors';
     EnsureHttpsInterceptorModule.forRoot()
   ]
 })
-export class AppModule {}
 ```
 
 Example:
@@ -71,7 +69,6 @@ import {PrefixUrlInterceptorModule} from 'angular-interceptors';
     PrefixUrlInterceptorModule.forRoot('https://some.url') // prefix
   ]
 })
-export class AppModule {}
 ```
 
 Example:
