@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/SteveVanOpstal/angular-interceptors/compare/v2.0.0...v2.0.1) (2018-02-26)
+
+
+### Bug Fixes
+
+* property 'maxAgeMs' has or is using name 'InjectionToken' ([b9a1bc6](https://github.com/SteveVanOpstal/angular-interceptors/commit/b9a1bc6))
+
+
+### Features
+
+* make injectionTokens publicly available ([0ed9026](https://github.com/SteveVanOpstal/angular-interceptors/commit/0ed9026))
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/SteveVanOpstal/angular-interceptors/compare/v1.0.6...v2.0.0) (2018-02-26)
 
