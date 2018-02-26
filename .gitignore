@@ -1,3 +1,4 @@
 /node_modules
 /lib
 *.log
+.ng_pkg_build
