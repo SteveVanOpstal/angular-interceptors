@@ -4,6 +4,9 @@ import {PREFIX, PREFIX_URL_INTERCEPTOR_PROVIDER} from './prefix-url.interceptor'
 
 @NgModule()
 export class PrefixUrlInterceptorModule {
+  /**
+   * Prefix HTTP request urls.
+   */
   static forRoot(prefix: string): ModuleWithProviders {
     return {
       ngModule: PrefixUrlInterceptorModule,
