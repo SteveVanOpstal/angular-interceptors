@@ -6,7 +6,7 @@ export class EnsureHttpsInterceptorModule {
   /**
    * Change `http://` to `https://` in HTTP request urls.
    */
-  static forRoot(maxAgeMs: number): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders {
     return {ngModule: EnsureHttpsInterceptorModule, providers: [ENSURE_HTTPS_INTERCEPTOR_PROVIDER]};
   }
 }
