@@ -1,4 +1,4 @@
-import {ModuleWithProviders, NgModule} from '@angular/core';
+import {ModuleWithProviders, NgModule, InjectionToken} from '@angular/core';
 
 import {PREFIX, PREFIX_URL_INTERCEPTOR_PROVIDER} from './prefix-url.interceptor';
 

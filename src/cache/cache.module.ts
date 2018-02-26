@@ -1,4 +1,4 @@
-import {ModuleWithProviders, NgModule} from '@angular/core';
+import {ModuleWithProviders, NgModule, InjectionToken} from '@angular/core';
 import {CACHE_INTERCEPTOR_PROVIDER, MAX_AGE_MS} from './cache.interceptor';
 
 @NgModule()
