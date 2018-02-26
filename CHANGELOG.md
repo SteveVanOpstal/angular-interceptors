@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/SteveVanOpstal/angular-interceptors/compare/v1.0.6...v2.0.0) (2018-02-26)
+
+
+### Bug Fixes
+
+* **ensure-https:** remove unused parameter maxAgeMs ([b967d44](https://github.com/SteveVanOpstal/angular-interceptors/commit/b967d44))
+
+
+
 <a name="1.0.6"></a>
 ## [1.0.6](https://github.com/SteveVanOpstal/angular-interceptors/compare/v1.0.5...v1.0.6) (2018-02-26)
 
