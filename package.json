@@ -15,25 +15,26 @@
     "postrelease": "git push --follow-tags origin master && conventional-github-releaser -p angular"
   },
   "dependencies": {
-    "@angular/common": "~5.2.0",
-    "@angular/compiler": "~5.2.0",
-    "@angular/core": "~5.2.0",
-    "@angular/platform-browser": "~5.2.0",
-    "@angular/platform-browser-dynamic": "~5.2.0",
-    "core-js": "^2.4.1",
-    "rxjs": "^5.5.5",
-    "typescript": "^2.4.2",
-    "zone.js": "^0.8.14"
+    "@angular/common": ">=5.2.3 <6.0.0",
+    "@angular/compiler": ">=5.2.3 <6.0.0",
+    "@angular/core": ">=5.2.3 <6.0.0",
+    "@angular/platform-browser": ">=5.2.3 <6.0.0",
+    "@angular/platform-browser-dynamic": ">=5.2.3 <6.0.0",
+    "core-js": "2.x",
+    "rxjs": "5.x",
+    "typescript": ">=2.4.2 <2.7",
+    "zone.js": "0.x"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "~5.2.0",
-    "@angular/language-service": "~5.2.0",
+    "@angular/compiler-cli": ">=5.2.3 <6.0.0",
+    "@angular/language-service": ">=5.2.3 <6.0.0",
     "clang-format": "^1.1.0",
-    "codelyzer": "4.0.2",
+    "codelyzer": "^4.1.0",
     "conventional-github-releaser": "^2.0.0",
-    "ng-packagr": "2.0.0-rc.9",
+    "ng-packagr": "^2.1.0",
     "standard-version": "^4.3.0",
     "tsickle": "^0.26",
+    "tslib": "^1.9.0",
     "tslint": "^5.9.1"
   },
   "ngPackage": {
