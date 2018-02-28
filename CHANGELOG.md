@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/SteveVanOpstal/angular-interceptors/compare/v2.0.4...v2.1.0) (2018-02-28)
+
+
+### Bug Fixes
+
+* aot build ([7dc419d](https://github.com/SteveVanOpstal/angular-interceptors/commit/7dc419d))
+
+
+
 <a name="2.0.4"></a>
 ## [2.0.4](https://github.com/SteveVanOpstal/angular-interceptors/compare/v2.0.3...v2.0.4) (2018-02-26)
 
