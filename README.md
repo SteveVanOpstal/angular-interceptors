@@ -10,6 +10,7 @@ npm install angular-interceptors --save
 - [Cache Interceptor](#cache-interceptor)
 - [Ensure Https Interceptor](#ensure-https-interceptor)
 - [Prefix Url Interceptor](#prefix-url-interceptor)
+- [InjectionTokens](#injectiontokens)
 
 ### Cache Interceptor
 Cache all HTTP `GET` requests.
@@ -20,7 +21,7 @@ import {CacheInterceptorModule} from 'angular-interceptors';
 
 @NgModule({
   imports: [
-    CacheInterceptorModule.forRoot(5 * 1000) // Max age in milliseconds. In this case 5 seconds.
+    CacheInterceptorModule.forRoot(3 * 1000) // Max age in milliseconds. In this case 3 seconds. Defaults to 5 seconds.
   ]
 })
 ```
@@ -74,4 +75,18 @@ import {PrefixUrlInterceptorModule} from 'angular-interceptors';
 Example:
 ```typescript
 this.http.get('/api/user'); // --> https://some.url/api/user
+```
+
+### InjectionTokens
+`MAX_AGE_MS` for `CacheInterceptorModule` and `PREFIX` for `PrefixUrlInterceptorModule` are also available as `InjectionToken`s
+
+``` typescript
+import {MAX_AGE_MS, PREFIX} from 'angular-interceptors';
+
+@NgModule({
+  providers: [
+    {provide: MAX_AGE_MS, useValue: 3 * 1000},
+    {provide: PREFIX, useValue: 'https://some.url'}
+  ]
+})
 ```

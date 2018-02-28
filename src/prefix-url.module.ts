@@ -1,13 +1,9 @@
 import {InjectionToken, ModuleWithProviders, NgModule} from '@angular/core';
 import {PREFIX, PREFIX_URL_INTERCEPTOR_PROVIDER} from './prefix-url.interceptor';
+export {PREFIX} from './prefix-url.interceptor';
 
 @NgModule()
 export class PrefixUrlInterceptorModule {
-  /**
-   * Prefix InjectionToken
-   */
-  static prefix = PREFIX;
-
   /**
    * Prefix HTTP request urls.
    */
