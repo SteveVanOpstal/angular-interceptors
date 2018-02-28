@@ -1,6 +1,6 @@
 import {HTTP_INTERCEPTORS, HttpEvent, HttpHandler, HttpInterceptor} from '@angular/common/http';
 import {HttpRequest} from '@angular/common/http';
-import {Inject, Injectable, InjectionToken, ModuleWithProviders, NgModule} from '@angular/core';
+import {Inject, Injectable, InjectionToken} from '@angular/core';
 import {Observable} from 'rxjs/Observable';
 
 export const PREFIX = new InjectionToken<string>('prefix');
