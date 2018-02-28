@@ -78,7 +78,11 @@ this.http.get('/api/user'); // --> https://some.url/api/user
 ```
 
 ### InjectionTokens
-`MAX_AGE_MS` for `CacheInterceptorModule` and `PREFIX` for `PrefixUrlInterceptorModule` are also available as `InjectionToken`s
+The configurations are also available as `InjectionToken`s:
+| `InjectionToken`    | `Modules`                    |
+| ------------------- | ---------------------------- |
+| `MAX_AGE_MS`        | `CacheInterceptorModule`     |
+| `PREFIX`            | `PrefixUrlInterceptorModule` |
 
 ``` typescript
 import {MAX_AGE_MS, PREFIX} from 'angular-interceptors';
