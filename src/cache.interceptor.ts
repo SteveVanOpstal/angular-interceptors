@@ -1,13 +1,8 @@
-import 'rxjs/add/operator/publishReplay';
-import 'rxjs/add/operator/finally';
-import 'rxjs/add/operator/take';
-import 'rxjs/add/operator/catch';
-import 'rxjs/add/observable/interval';
-
 import {HTTP_INTERCEPTORS, HttpEvent, HttpHandler, HttpInterceptor} from '@angular/common/http';
 import {HttpRequest} from '@angular/common/http';
 import {Inject, Injectable, InjectionToken, Optional} from '@angular/core';
-import {Observable} from 'rxjs/Observable';
+import {interval, Observable, throwError} from 'rxjs';
+import {catchError, finalize, publishReplay, refCount, take} from 'rxjs/operators';
 
 export const MAX_AGE_MS = new InjectionToken<string>('maxAgeMs');
 
@@ -27,14 +22,12 @@ export class CacheInterceptor implements HttpInterceptor {
       return cachedResponse;
     }
 
-    const obs$ = next.handle(req)
-                     .finally(
-                         () => Observable.interval(this.maxAgeMs)
-                                   .take(1)
-                                   .subscribe(() => this.cache.delete(req.urlWithParams)))
-                     .publishReplay()
-                     .refCount()
-                     .catch(err => Observable.throw(err));
+    const obs$ = next.handle(req).pipe(
+        finalize(
+            () => interval(this.maxAgeMs)
+                      .pipe(take(1))
+                      .subscribe(() => this.cache.delete(req.urlWithParams))),
+        publishReplay(), refCount(), catchError(err => throwError(err)));
     this.cache.set(req.urlWithParams, obs$);
 
     return obs$;

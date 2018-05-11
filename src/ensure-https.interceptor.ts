@@ -1,7 +1,7 @@
 import {HTTP_INTERCEPTORS, HttpEvent, HttpHandler, HttpInterceptor} from '@angular/common/http';
 import {HttpRequest} from '@angular/common/http';
 import {Injectable, InjectionToken} from '@angular/core';
-import {Observable} from 'rxjs/Observable';
+import {Observable} from 'rxjs';
 
 @Injectable()
 export class EnsureHttpsInterceptor implements HttpInterceptor {
