@@ -41,7 +41,7 @@
   "ngPackage": {
     "dest": "lib",
     "lib": {
-      "entryFile": "src/public_api.ts"
+      "entryFile": "public_api.ts"
     }
   }
 }
