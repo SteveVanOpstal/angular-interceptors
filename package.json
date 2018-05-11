@@ -1,6 +1,6 @@
 {
   "name": "angular-interceptors",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "license": "GPL-3.0",
   "scripts": {
     "package": "ng-packagr -p package.json",
