@@ -1,0 +1,14 @@
+{
+  "project": {
+    "name": "angular-interceptors"
+  },
+  "apps": [
+    {
+      "root": "",
+      "outDir": "dist",
+      "main": "public_api.ts",
+      "test": "test.ts",
+      "testTsconfig": "tsconfig.spec.json"
+    }
+  ]
+}

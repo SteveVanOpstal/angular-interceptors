@@ -7,7 +7,7 @@
     "format": "clang-format --glob=\"@(src)/**/*.@(ts|js)\" -i && clang-format --glob=\"*.@(ts|js)\" -i",
     "lint": "tslint -p . -c tslint.json \"src/**/*.ts\" \"public_api.ts\"",
     "release": "standard-version --release-as patch",
-    "postrelease": "git push --follow-tags origin master && yarn package && conventional-github-releaser -p angular"
+    "test": "karma start ./karma.conf.js"
   },
   "devDependencies": {
     "@angular/cli": "^1.7.3",
